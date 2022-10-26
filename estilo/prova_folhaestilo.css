@@ -1,0 +1,321 @@
+/* TUDO DO SITE "GLOBAL" */
+html, body{
+	margin: 0;
+	padding: 0;
+	
+	background-image: url("../img/bg_prova.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+	width: 100%;
+	height: 100vh;
+	min-height: auto;
+
+	font-family: Verdana, Geneva, sans-serif;
+
+	text-align: center;
+	position: center;
+
+	display: block;
+}
+
+
+/*_________________________________________________________________________________________________________________________*/
+
+
+/* CANVAS */
+canvas
+{
+	margin: 10px 0 0 0;
+	padding: 0;
+	
+  background-image: url("../img/bg_canva.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+	border: 5px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #098577 0%, #32F1DA 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #098577 0%, #32F1DA 100%);
+	border-image: linear-gradient(to bottom, #098577 0%, #32F1DA 100%);
+
+	border-image-slice: 1;
+
+	box-shadow: 0em 0em 0.6em #4EF3DF;
+}
+
+/* ESPAÇAMENTO ENTRE CANVAS E BOTÕES */
+#scriptao{
+	margin: 2px auto 0 auto;
+}
+
+
+/*_________________________________________________________________________________________________________________________*/
+
+
+/* BOTAO - PLAY*/
+.play {
+	margin: 0 2px 0 2px;
+
+	-moz-box-shadow: 0px 0px 4px 1px #077265;
+	-webkit-box-shadow: 0px 0px 4px 1px #077265;
+	box-shadow: 0px 0px 4px 1px #077265;
+
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4EF3DF), color-stop(1, #098577) );
+	background:-moz-linear-gradient( center top, #32F1DA 5%, #098577 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4EF3DF', endColorstr='#098577');
+	background-color:#4EF3DF;
+
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+
+	text-indent:0;
+
+	display:inline-block;
+
+	color:#ffffff;
+
+	font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+
+	height:50px;
+	line-height:50px;
+	width:160px;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 0px 4px #111111;
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* AO PASSAR O MOUSE MUDA DE COR */
+.play:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #098577), color-stop(1, #4EF3DF) );
+	background:-moz-linear-gradient( center top, #098577 5%, #4EF3DF 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#098577', endColorstr='#4EF3DF');
+	background-color:#098577;
+}
+
+/* BOTAO ATIVO */
+.play:active {
+	position:relative;
+	top:1px;
+}
+
+/* QUANDO JA PRESSIONADO O BOTAO */
+.play:visited {
+	font-style: none;
+	border: 0;
+	color: none;
+}
+/* FIM BOTAO*/
+
+
+/* BOTAO - RESET*/
+.uniso {
+	margin: 0 2px 0 2px;
+
+	-moz-box-shadow: 0px 0px 4px 1px #454501;
+	-webkit-box-shadow: 0px 0px 4px 1px #454501;
+	box-shadow: 0px 0px 4px 1px #454501;
+
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fbfb0d), color-stop(1, #646402) );
+	background:-moz-linear-gradient( center top, #fbfb0d 5%, #646402 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbfb0d', endColorstr='#646402');
+	background-color:#fbfb0d;
+
+
+	-webkit-border-top-left-radius:2px;
+	-moz-border-radius-topleft:2px;
+	border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-radius-topright:2px;
+	border-top-right-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	-moz-border-radius-bottomright:2px;
+	border-bottom-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-moz-border-radius-bottomleft:2px;
+	border-bottom-left-radius:2px;
+
+	text-indent:0;
+
+	display:inline-block;
+
+	color:#ffffff;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	font-style:normal;
+
+	height:50px;
+	line-height:50px;
+	width:160px;
+
+	text-decoration:none;
+	text-align:center;
+	text-shadow:0px 0px 4px #111111;
+
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.uniso:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #646402), color-stop(1, #fbfb0d) );
+	background:-moz-linear-gradient( center top, #646402 5%, #fbfb0d 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#646402', endColorstr='#fbfb0d');
+	background-color:#646402;
+}
+
+.uniso:active {
+	position:relative;
+	top:1px;
+}
+
+.uniso:visited {
+	font-style: none;
+	border: 0;
+	color: none;
+}
+/* FIM BOTAO */ 
+
+/* POSICIONAMENTO DA IMAGEM DENTRO DO BOTAO */
+.logo_uniso{
+	width: 80px;
+	height: 80px;
+
+	margin: -10px 0 0 -69px;
+	position: absolute;
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+}
+
+/* POSICIONAMENTO DA IMAGEM DENTRO DO BOTAO */
+.logo_play{
+	width: 80px;
+	height: 80px;
+
+	margin: -15px 0 0 -40px;
+	position: absolute;
+	display: inline-block;
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+}
+
+
+/*_________________________________________________________________________________________________________________________*/
+
+
+/* TEXTOS */
+#textos{
+	margin: 22px 0 0 0;
+	padding: 0 auto;
+}
+
+.texto1{
+	color: #ffffff99;
+	font-size: 12.3px;
+	font-weight: bold;
+}
+
+.texto2{
+	margin: 8px 0 0 0;
+	color: #ffffff60;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+/* COR EM UMA PALAVRA */
+.oproblema{
+	color: #e53935;
+}
+
+.boasorte{
+	color: #1E88E5;
+	text-decoration: underline;
+}
+/* FIM TEXTOS */
+
+
+/*_________________________________________________________________________________________________________________________*/
+
+
+/* CONTROLE */
+.controle{
+	margin: -300px 0 0 100px;
+	padding: 0;
+
+	float: left;
+
+	width: 150px;
+	height: auto;
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.controle_escrito{
+	margin: -440px 0 0 82px;
+	padding: 0;
+
+	float: left;
+
+	width: 200px;
+	height: auto;
+
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}

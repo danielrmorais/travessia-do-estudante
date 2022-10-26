@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PROVA DE JOGOS PARA WEB - DANIEL R. MORAIS</title>
+	
+	<!-- FAVICON -->
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon_prova.ico">
+
+	<!-- CSS -->
+	<style>
+		*{ box-sizing: border-box; }
+		html,body{
+			margin: 0;
+			padding: 0;
+
+			width: 100%;
+
+			background-color: #111111;
+
+			text-align: center;
+		}
+
+		#control_script{
+			color: #757575;
+			font-size: 13.5px;
+			font-weight: bold;
+			font-family: Verdana, Geneva, sans-serif;
+
+			margin: 5px 0 65px 0;
+			position: relative;
+		}
+
+		#uniso{
+			margin: 40px 0 0 0;
+		}
+
+		#nome_ra{
+			bottom: 0;
+			position: absolute;
+			width: 100%;
+			color: #FFFFFF;
+
+			margin: 0;
+			padding: 39px;
+
+			font-size: 14px;
+			font-weight: bold;
+			font-family: Verdana, Geneva, sans-serif;
+			text-shadow: 0em 0em 0.13em #098577;
+
+			border: 10px ridge #098577;
+			background-color: #09857710;
+		}
+
+		.nome{
+			color: #1E88E5;
+		}
+
+		.ra{
+			color: #e53935;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- IMAGEM DA UNISO + LINK EXTERNO -->
+	<a href="https://www.uniso.br/home" data-scroll target="_blank">
+		<img src="../img/uniso.png" alt="" width="260" height="390" id="uniso">
+	</a>
+	
+	<!-- JAVASCRIPT -->
+	<div id="control_script">
+	<script>
+		document.write(Date());
+	</script>
+	</div>
+
+	<!-- NOME E R.A. -->
+	<div id="nome_ra">
+		<span class="nome">NOME:</span> DANIEL RIGO DE MORAIS &nbsp;&nbsp;|&nbsp;&nbsp; <span class="ra">R.A.:</span> 00098577
+	</div>
+
+</body>
+</html>
